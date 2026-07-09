@@ -24,12 +24,21 @@ export function isInsideCodeFence(precedingLines: string[]): boolean {
 
 /**
  * Whether the text up to the cursor on the current line leaves an inline
- * code span open, i.e. an odd number of backtick runs precede the cursor.
+ * code span open. A code span only closes on a backtick run of the same
+ * length as the one that opened it, per CommonMark.
  */
 export function isInsideInlineCode(lineTextBeforeCursor: string): boolean {
   const runs = lineTextBeforeCursor.match(/`+/g);
   if (!runs) {
     return false;
   }
-  return runs.length % 2 === 1;
+  let openLength: number | null = null;
+  for (const run of runs) {
+    if (openLength === null) {
+      openLength = run.length;
+    } else if (run.length === openLength) {
+      openLength = null;
+    }
+  }
+  return openLength !== null;
 }

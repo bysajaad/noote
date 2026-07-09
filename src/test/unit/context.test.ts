@@ -1,5 +1,5 @@
 import * as assert from 'assert';
-import { isInsideCodeFence, isInsideInlineCode } from '../context';
+import { isInsideCodeFence, isInsideInlineCode } from '../../context';
 
 suite('isInsideCodeFence', () => {
   test('returns false with no fences', () => {
