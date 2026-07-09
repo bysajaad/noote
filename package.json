@@ -1,0 +1,89 @@
+{
+  "name": "noote",
+  "displayName": "Noote — Markdown Slash Commands",
+  "description": "Outline/Notion-style slash commands for plain markdown files.",
+  "version": "0.0.1",
+  "publisher": "bysajaad",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Noote",
+      "properties": {
+        "mdSlash.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable the '/' slash command menu in markdown files."
+        },
+        "mdSlash.disabledCommands": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [],
+          "description": "Command labels to hide from the slash command menu."
+        },
+        "mdSlash.customSnippets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "aliases": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "snippet": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "label",
+              "snippet"
+            ]
+          },
+          "default": [],
+          "description": "User-defined commands merged into the slash command menu."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "node esbuild.mjs",
+    "watch": "node esbuild.mjs --watch",
+    "package": "node esbuild.mjs --production",
+    "compile-tests": "tsc -p ./",
+    "watch-tests": "tsc -p ./ -w",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "test": "node ./out/test/runTest.js",
+    "vscode:prepublish": "npm run package"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^20.14.0",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "@vscode/test-electron": "^2.4.0",
+    "esbuild": "^0.23.0",
+    "eslint": "^8.57.0",
+    "mocha": "^10.6.0",
+    "typescript": "^5.5.3"
+  }
+}
