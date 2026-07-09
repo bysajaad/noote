@@ -1,6 +1,10 @@
 # Changelog
 
-## Unreleased
+## 0.0.2
+
+- Add extension icon.
+
+## 0.0.1
 
 - Initial slash command menu for markdown files: headings, title, todo, bulleted/numbered lists, strikethrough, underline, table, quote, code block, toggle block, divider, page break, link, image, date, and GFM callouts (note/tip/warning/important/caution).
 - Trigger fires only at line start or after whitespace, and is suppressed inside fenced code blocks and inline code spans.

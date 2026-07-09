@@ -2,9 +2,10 @@
   "name": "noote",
   "displayName": "Noote — Markdown Slash Commands",
   "description": "Outline/Notion-style slash commands for plain markdown files.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "bysajaad",
   "license": "MIT",
+  "icon": "assets/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/bysajaad/noote.git"

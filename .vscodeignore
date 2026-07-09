@@ -13,6 +13,8 @@ tsconfig.json
 CLAUDE.md
 project-brief.md
 CONTRIBUTING.md
+assets/icon-full.png
+**/.DS_Store
 **/*.map
 **/*.vsix
 **/.git/**
