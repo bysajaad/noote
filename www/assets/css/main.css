@@ -16,6 +16,7 @@
   --card-line: rgba(139, 92, 246, .28);
   --chrome: linear-gradient(180deg, #bfeaff 0%, #35c7ff 38%, #f5f0ff 50%, #ff3ddb 62%, #ff7ae6 100%);
   --font-display: "Archivo Black", system-ui, sans-serif;
+  --font-title: "Climate Crisis", "Archivo Black", system-ui, sans-serif;
   --font-body: "Space Grotesk", system-ui, sans-serif;
   --font-mono: "Space Mono", ui-monospace, monospace;
 }
@@ -114,10 +115,11 @@ a:hover { color: var(--pink); }
 @keyframes blink { 50% { opacity: 0; } }
 
 .hero-title {
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 5.6vw, 4.1rem);
-  line-height: 1.12;
-  letter-spacing: -.01em;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 4.4vw, 3.2rem);
+  line-height: 1.14;
+  letter-spacing: 0;
   text-transform: uppercase;
   text-wrap: balance;
 }
@@ -202,7 +204,7 @@ a:hover { color: var(--pink); }
   font-family: var(--font-mono); font-size: .75rem; letter-spacing: .12em;
   color: var(--muted);
 }
-.crt img { display: block; width: 100%; height: auto; }
+.crt img, .crt video { display: block; width: 100%; height: auto; }
 .crt-scanlines {
   position: absolute; inset: 0; pointer-events: none;
   background: repeating-linear-gradient(0deg, rgba(10, 4, 23, .14) 0 1px, transparent 1px 3px);
@@ -233,8 +235,9 @@ a:hover { color: var(--pink); }
 
 /* ---------- sections ---------- */
 .section-title {
-  font-family: var(--font-display);
-  font-size: clamp(1.6rem, 3.6vw, 2.6rem);
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: clamp(1.35rem, 3vw, 2.2rem);
   text-transform: uppercase; line-height: 1.2;
   text-align: center;
   margin-bottom: clamp(2.5rem, 5vw, 4rem);
@@ -316,8 +319,9 @@ a:hover { color: var(--pink); }
   color: var(--amber); margin-bottom: 1.5rem;
 }
 .coffee-title {
-  font-family: var(--font-display);
-  font-size: clamp(1.9rem, 4.6vw, 3.4rem);
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: clamp(1.55rem, 3.8vw, 2.8rem);
   text-transform: uppercase; line-height: 1.15;
   text-wrap: balance;
 }
@@ -349,8 +353,8 @@ a:hover { color: var(--pink); }
   color: var(--violet); margin-bottom: 1rem;
 }
 .author h2 {
-  font-family: var(--font-display); text-transform: uppercase;
-  font-size: clamp(1.5rem, 3vw, 2.1rem); margin-bottom: 1.1rem;
+  font-family: var(--font-title); font-weight: 400; text-transform: uppercase;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem); margin-bottom: 1.1rem;
 }
 .author h2 a { color: var(--ink); }
 .author h2 a:hover { color: var(--cyan); }

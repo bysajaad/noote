@@ -21,7 +21,7 @@ bundle exec jekyll serve
 - `_layouts/default.html` — HTML shell (fonts, meta, favicon)
 - `index.html` — the landing page content
 - `assets/css/main.css` — all styling
-- `assets/img/` — icon + intro gif, copied from `../assets`
+- `assets/img/` — icon + intro video, copied from `../assets`
 
 The custom domain (`noote.dpdns.org`) is set in Settings → Pages; DNS points
 the subdomain at GitHub Pages. Since the site deploys via a custom workflow,
