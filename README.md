@@ -10,6 +10,10 @@ Start typing `/` on an empty line (or right after whitespace) in a markdown file
 
 The menu does **not** open inside fenced code blocks, inline code spans, or after a non-whitespace character (so it won't fire inside a URL like `https://`).
 
+### List continuation
+
+Pressing Enter inside a **Todo**, **Bulleted list**, or **Numbered list** item continues the list on the next line (numbered lists auto-increment; todos always start unchecked), matching WYSIWYG editor behavior. Pressing Enter on an *empty* list item exits the list instead — the marker is cleared and you're left on a plain paragraph line, i.e. "double Enter" ends the list.
+
 ## Commands
 
 | Command | Aliases | Inserts |

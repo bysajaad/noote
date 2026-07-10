@@ -2,7 +2,7 @@
   "name": "noote",
   "displayName": "Noote — Markdown Slash Commands",
   "description": "Outline/Notion-style slash commands for plain markdown files.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "bysajaad",
   "license": "MIT",
   "icon": "assets/icon.png",
@@ -65,7 +65,14 @@
           "description": "User-defined commands merged into the slash command menu."
         }
       }
-    }
+    },
+    "keybindings": [
+      {
+        "command": "noote.onEnterKey",
+        "key": "enter",
+        "when": "editorTextFocus && editorLangId == markdown && !editorReadonly && !editorHasSelection && !suggestWidgetVisible && !inSnippetMode"
+      }
+    ]
   },
   "scripts": {
     "compile": "node esbuild.mjs",
