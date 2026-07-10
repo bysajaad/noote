@@ -2,7 +2,7 @@
 
 Outline/Notion-style slash commands for plain markdown files in VS Code. Type `/` at the start of a line (or after whitespace) to open a filterable menu of block commands, inserted as snippets with tab stops — while everything stays a plain `.md` file under git.
 
-> Demo GIF coming soon.
+![Noote demo — typing / opens the slash command menu in a markdown file](assets/noote-intro.gif)
 
 ## Usage
 
