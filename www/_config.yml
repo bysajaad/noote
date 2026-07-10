@@ -13,7 +13,7 @@ author:
 links:
   marketplace: https://marketplace.visualstudio.com/items?itemName=bysajaad.noote
   github: https://github.com/bysajaad/noote
-  coffee: https://www.buymeacoffee.com/bysajaad
+  coffee: /buy-me-a-coffee/
 
 exclude:
   - README.md
