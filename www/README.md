@@ -1,6 +1,6 @@
 # Noote landing page
 
-The marketing landing page for [Noote](https://github.com/bysajaad/noote), served at <https://noote.dpdns.org/>.
+The marketing landing page for [Noote](https://github.com/bysajaad/noote), served at <https://noote.iamsajaad.com/>.
 
 Built with Jekyll. Minimal 80s synthwave, bold hero. Deployed by the
 [`pages.yml`](../.github/workflows/pages.yml) workflow on every push to `main`
@@ -23,6 +23,6 @@ bundle exec jekyll serve
 - `assets/css/main.css` — all styling
 - `assets/img/` — icon + intro video, copied from `../assets`
 
-The custom domain (`noote.dpdns.org`) is set in Settings → Pages; DNS points
-the subdomain at GitHub Pages. Since the site deploys via a custom workflow,
-no `CNAME` file is needed in the repo.
+The custom domain (`noote.iamsajaad.com`) is set in Settings → Pages; DNS is
+a Cloudflare-proxied record pointing the subdomain at GitHub Pages. Since the
+site deploys via a custom workflow, no `CNAME` file is needed in the repo.
