@@ -1,0 +1,139 @@
+---
+layout: default
+---
+
+<a class="skip-link" href="#features">Skip to content</a>
+
+<header class="nav">
+  <a class="nav-brand" href="{{ '/' | relative_url }}">
+    <img src="{{ '/assets/img/icon-full.png' | relative_url }}" alt="Noote logo" width="44" height="33">
+    <span>NOOTE</span>
+  </a>
+  <nav class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#install">Install</a>
+    <a href="{{ site.links.github }}" target="_blank" rel="noopener">GitHub</a>
+    <a class="nav-coffee" href="{{ site.links.coffee }}" target="_blank" rel="noopener">☕ Buy me a coffee</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-badge"><span class="blink">▮</span> VS CODE EXTENSION · FREE · MIT</p>
+    <h1 class="hero-title">
+      Turn your VS&nbsp;Code into a <span class="chrome">feature-rich</span> markdown editor,
+      <em class="neon">so&nbsp;native.</em>
+    </h1>
+    <p class="hero-sub">
+      Type <code>/</code> and get Notion-style block commands in any plain <code>.md</code> file.
+      No webviews, no lock-in, no telemetry — just markdown, under git, the way it should be.
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="{{ site.links.marketplace }}" target="_blank" rel="noopener">Install from Marketplace</a>
+      <a class="btn btn-ghost" href="{{ site.links.github }}" target="_blank" rel="noopener">★ Star on GitHub</a>
+    </div>
+
+    <figure class="crt">
+      <div class="crt-bar" aria-hidden="true"><i></i><i></i><i></i><span>noote — demo.md</span></div>
+      <img src="{{ '/assets/img/noote-intro.gif' | relative_url }}"
+           alt="Demo: typing / in a markdown file opens Noote's slash command menu"
+           loading="eager">
+      <div class="crt-scanlines" aria-hidden="true"></div>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ COMMAND MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>/h1</span><span>/todo</span><span>/table</span><span>/code</span><span>/quote</span><span>/toggle</span><span>/date</span><span>/note</span><span>/tip</span><span>/warning</span><span>/image</span><span>/link</span><span>/divider</span><span>/bullet</span><span>/number</span><span>/strike</span>
+    <span>/h1</span><span>/todo</span><span>/table</span><span>/code</span><span>/quote</span><span>/toggle</span><span>/date</span><span>/note</span><span>/tip</span><span>/warning</span><span>/image</span><span>/link</span><span>/divider</span><span>/bullet</span><span>/number</span><span>/strike</span>
+  </div>
+</div>
+
+<!-- ============ FEATURES ============ -->
+<section class="features" id="features">
+  <h2 class="section-title">Everything you expect.<br><span class="chrome">Nothing you don't.</span></h2>
+  <div class="feature-grid">
+    <article class="card">
+      <span class="card-icon">/</span>
+      <h3>Slash commands</h3>
+      <p>24 block commands — headings, todos, tables, code fences, GFM alerts and more. Filter by label or alias: <code>/tab</code> and <code>/table</code> both hit Table.</p>
+    </article>
+    <article class="card">
+      <span class="card-icon">↵</span>
+      <h3>Smart lists</h3>
+      <p>Enter continues todos, bullets and numbered lists — auto-incrementing as it goes. Double Enter exits the list, just like a WYSIWYG editor.</p>
+    </article>
+    <article class="card">
+      <span class="card-icon">⌗</span>
+      <h3>Custom snippets</h3>
+      <p>Define your own commands with full VS Code snippet syntax — tab stops, placeholders, the works — merged straight into the menu.</p>
+    </article>
+    <article class="card">
+      <span class="card-icon">.md</span>
+      <h3>Plain markdown</h3>
+      <p>Your notes stay ordinary <code>.md</code> files under git. No proprietary format, no database, no sync service holding them hostage.</p>
+    </article>
+    <article class="card">
+      <span class="card-icon">◈</span>
+      <h3>Truly native</h3>
+      <p>No webviews, no custom editors, no re-rendered pane. It's the real VS Code text editor with superpowers — themes, keybindings and vim mode all intact.</p>
+    </article>
+    <article class="card">
+      <span class="card-icon">◎</span>
+      <h3>Context aware</h3>
+      <p>The menu knows when to stay quiet — never inside code fences, inline code, or mid-URL. And no telemetry. Ever.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ INSTALL ============ -->
+<section class="install" id="install">
+  <h2 class="section-title">Up and running in <span class="neon">10 seconds</span></h2>
+  <ol class="install-steps">
+    <li><span>01</span> Open VS Code and hit <code>⌘P</code> / <code>Ctrl+P</code></li>
+    <li><span>02</span> Paste <code class="install-cmd">ext install bysajaad.noote</code></li>
+    <li><span>03</span> Open any <code>.md</code> file and type <code>/</code></li>
+  </ol>
+  <a class="btn btn-primary" href="{{ site.links.marketplace }}" target="_blank" rel="noopener">Get it on the Marketplace</a>
+</section>
+
+<!-- ============ DONATION CTA ============ -->
+<section class="coffee" id="coffee">
+  <div class="coffee-inner">
+    <p class="coffee-eyebrow">FREE FOREVER · POWERED BY CAFFEINE</p>
+    <h2 class="coffee-title">Noote saved you a <span class="chrome">keystroke</span>?</h2>
+    <p class="coffee-sub">It's free, MIT-licensed, and always will be. If it makes your notes flow, fuel the next release.</p>
+    <a class="btn btn-coffee" href="{{ site.links.coffee }}" target="_blank" rel="noopener">
+      <span class="btn-coffee-cup">☕</span> Buy me a coffee
+    </a>
+  </div>
+</section>
+
+<!-- ============ AUTHOR ============ -->
+<section class="author" id="author">
+  <div class="author-inner">
+    <p class="author-eyebrow">MADE BY</p>
+    <h2><a href="https://iamsajaad.com" target="_blank" rel="noopener">Sajad Roudbari</a></h2>
+    <p>
+      Product design lead with 15+ years turning friction into flow — currently heading product
+      design at Digikala Jet and building things on the side. Noote exists because he wanted
+      Notion's speed without giving up plain markdown and VS Code.
+      More at <a href="https://iamsajaad.com" target="_blank" rel="noopener">iamsajaad.com</a>.
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <img src="{{ '/assets/img/icon-full.png' | relative_url }}" alt="" width="36" height="27">
+  <p>
+    <a href="{{ site.links.github }}" target="_blank" rel="noopener">GitHub</a> ·
+    <a href="{{ site.links.marketplace }}" target="_blank" rel="noopener">Marketplace</a> ·
+    <a href="{{ site.links.coffee }}" target="_blank" rel="noopener">Buy me a coffee</a> ·
+    <a href="https://iamsajaad.com" target="_blank" rel="noopener">iamsajaad.com</a>
+  </p>
+  <p class="footer-fine">MIT License · © 2026 Sajad Roudbari · <span class="footer-glow">est. in the neon grid</span></p>
+</footer>

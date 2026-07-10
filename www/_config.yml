@@ -1,0 +1,23 @@
+title: Noote — Markdown Slash Commands for VS Code
+description: >-
+  Turn your VS Code into a feature-rich markdown editor, so native.
+  Notion-style slash commands for plain .md files.
+url: "https://bysajaad.github.io"
+baseurl: "/noote"
+
+author:
+  name: Sajad Roudbari
+  url: https://iamsajaad.com
+
+# Site-wide links
+links:
+  marketplace: https://marketplace.visualstudio.com/items?itemName=bysajaad.noote
+  github: https://github.com/bysajaad/noote
+  coffee: https://www.buymeacoffee.com/bysajaad
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor
