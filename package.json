@@ -1,7 +1,7 @@
 {
   "name": "noote",
   "displayName": "Noote — Markdown Slash Commands",
-  "description": "Outline/Notion-style slash commands for plain markdown files.",
+  "description": "Notion-style slash commands, snippets, and smart list continuation for Markdown files in VS Code.",
   "version": "0.0.4",
   "publisher": "bysajaad",
   "license": "MIT",
@@ -15,8 +15,26 @@
     "vscode": "^1.85.0"
   },
   "categories": [
-    "Snippets",
-    "Other"
+    "Programming Languages",
+    "Snippets"
+  ],
+  "keywords": [
+    "markdown",
+    "markdown editor",
+    "markdown snippets",
+    "markdown slash commands",
+    "slash commands",
+    "notion",
+    "notion style",
+    "outline",
+    "notes",
+    "note taking",
+    "gfm",
+    "github flavored markdown",
+    "todo",
+    "checkbox",
+    "table",
+    "headings"
   ],
   "activationEvents": [
     "onLanguage:markdown"

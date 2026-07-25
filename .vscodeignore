@@ -19,3 +19,4 @@ assets/noote-intro.gif
 **/*.map
 **/*.vsix
 **/.git/**
+www/**

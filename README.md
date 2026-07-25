@@ -3,7 +3,7 @@
 [![Website](https://img.shields.io/badge/website-noote.iamsajaad.com-35c7ff)](https://noote.iamsajaad.com)
 [![Buy me a coffee](https://img.shields.io/badge/%E2%98%95%EF%B8%8F_Buy_me_a_coffee-ffb340)](https://noote.iamsajaad.com/buy-me-a-coffee)
 
-Outline/Notion-style slash commands for plain markdown files in VS Code. Type `/` at the start of a line (or after whitespace) to open a filterable menu of block commands, inserted as snippets with tab stops — while everything stays a plain `.md` file under git.
+Noote brings Notion-style slash commands, snippets, and smart list continuation to the VS Code Markdown editor. Type `/` in any Markdown file to open a filterable menu of block commands, inserted as snippets with tab stops — while everything stays a plain `.md` file under git.
 
 **Website: <https://noote.iamsajaad.com>** · If Noote makes your notes flow, you can [buy me a coffee](https://noote.iamsajaad.com/buy-me-a-coffee). ☕
 
