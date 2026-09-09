@@ -11,7 +11,7 @@ author:
 
 # Site-wide links
 links:
-  marketplace: vscode:extension/bysajaad.noote
+  marketplace: https://marketplace.visualstudio.com/items?itemName=bysajaad.noote
   github: https://github.com/bysajaad/noote
   coffee: /buy-me-a-coffee/
 
