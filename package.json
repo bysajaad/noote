@@ -2,7 +2,7 @@
   "name": "noote",
   "displayName": "Noote — Markdown Slash Commands",
   "description": "Notion-style slash commands, snippets, and smart list continuation for Markdown files in VS Code.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "bysajaad",
   "license": "MIT",
   "icon": "assets/icon.png",

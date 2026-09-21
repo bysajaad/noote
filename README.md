@@ -7,6 +7,8 @@ Noote brings Notion-style slash commands, snippets, and smart list continuation 
 
 **Website: <https://noote.iamsajaad.com>** · If Noote makes your notes flow, you can [buy me a coffee](https://noote.iamsajaad.com/buy-me-a-coffee). ☕
 
+**VSCodium / Open VSX:** Noote is not listed on Open VSX yet — install the `.vsix` from [GitHub Releases](https://github.com/bysajaad/noote/releases).
+
 ![Noote demo — typing / opens the slash command menu in a markdown file](assets/noote-intro.gif)
 
 ## Usage
@@ -18,6 +20,27 @@ The menu does **not** open inside fenced code blocks, inline code spans, or afte
 ### List continuation
 
 Pressing Enter inside a **Todo**, **Bulleted list**, or **Numbered list** item continues the list on the next line (numbered lists auto-increment; todos always start unchecked), matching WYSIWYG editor behavior. Pressing Enter on an *empty* list item exits the list instead — the marker is cleared and you're left on a plain paragraph line, i.e. "double Enter" ends the list.
+
+## Right-to-left (RTL) text in VS Code's Markdown editors
+
+VS Code ships more than one Markdown editing surface, and RTL support differs between them:
+
+| Surface | RTL behavior |
+|---|---|
+| Text editor (default) | Renders RTL runs in the correct reading order on each line. |
+| Markdown preview | Renders correct bidi order, but paragraphs stay left-aligned. |
+| Markdown Editor (WYSIWYG, via *Reopen Editor With… → Markdown Editor*) | **No RTL support** — content is laid out with a left-to-right base direction, so RTL paragraphs align left, the caret starts on the wrong side, and punctuation at line edges is ordered incorrectly. |
+
+Noote does not add RTL support, and it cannot patch the WYSIWYG editor: that surface is a sealed webview with a locked-down CSP and no extension contribution point for styles or scripts. The gap is tracked in [bysajaad/noote#1](https://github.com/bysajaad/noote/issues/1), with the upstream report at [microsoft/vscode#337009](https://github.com/microsoft/vscode/issues/337009).
+
+### Workarounds
+
+- **Edit RTL-heavy files in the text editor.** Right-click the editor tab and choose **Reopen Editor With… → Text Editor**, or pin it with `"workbench.editorAssociations": { "*.md": "default" }` in your settings.
+- **Read and share via the Markdown preview** (**Markdown: Open Preview**), which renders RTL text in correct bidi order.
+- **Force right-aligned rendering** in the preview and on GitHub by wrapping RTL sections in `<div dir="rtl">…</div>`. Markdown inside the `div` needs a blank line before and after it to render, and Noote's `/` menu also fires inside such HTML blocks (inserted markdown follows the same blank-line rule).
+- **Customize the preview** further with the `markdown.styles` setting.
+
+Noote's slash commands and list continuation work identically regardless of text direction. For why Noote does not ship its own editor, see [Non-goals](#non-goals).
 
 ## Commands
 
@@ -84,7 +107,7 @@ npm test                  # unit tests, then the @vscode/test-electron integrati
 
 ## Non-goals
 
-This extension is intentionally narrow: no webviews or custom editors, no WYSIWYG rendering, no git/GitHub sync, no note graph/wikilink features, and no telemetry. See [project-brief.md](project-brief.md) for the full rationale and the longer-term (out-of-scope) vision.
+This extension is intentionally narrow: no webviews or custom editors, no WYSIWYG rendering, no git/GitHub sync, no note graph/wikilink features, and no telemetry. See [project-brief.md](https://github.com/bysajaad/noote/blob/main/project-brief.md) for the full rationale and the longer-term (out-of-scope) vision.
 
 ## License
 

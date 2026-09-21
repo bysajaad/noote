@@ -11,6 +11,7 @@ layout: default
   </a>
   <nav class="nav-links">
     <a href="#features">Features</a>
+    <a href="#rtl">RTL</a>
     <a href="#install">Install</a>
     <a href="{{ site.links.github }}" target="_blank" rel="noopener">GitHub</a>
     <a class="nav-coffee" href="{{ site.links.coffee }}" target="_blank" rel="noopener">☕ Buy me a coffee</a>
@@ -86,6 +87,29 @@ layout: default
       <span class="card-icon">◎</span>
       <h3>Context aware</h3>
       <p>The menu knows when to stay quiet — never inside code fences, inline code, or mid-URL. And no telemetry. Ever.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ RTL ============ -->
+<section class="features" id="rtl">
+  <h2 class="section-title">Right-to-left text,<br><span class="chrome">honestly documented.</span></h2>
+  <div class="feature-grid">
+    <article class="card">
+      <span class="card-icon">⇄</span>
+      <h3>RTL in VS Code's Markdown editors</h3>
+      <p>
+        VS Code's new WYSIWYG Markdown Editor has no RTL support yet — Arabic, Hebrew and Persian
+        paragraphs are laid out left-to-right. Noote keeps you in the native text editor, which
+        renders RTL runs in the correct reading order, and the Markdown preview shows correct bidi order.
+      </p>
+      <p>
+        Tracked in <a href="https://github.com/bysajaad/noote/issues/1" target="_blank" rel="noopener">bysajaad/noote#1</a>
+        · upstream <a href="https://github.com/microsoft/vscode/issues/337009" target="_blank" rel="noopener">microsoft/vscode#337009</a>
+      </p>
+      <p>
+        <a class="btn btn-ghost" href="https://github.com/bysajaad/noote#right-to-left-rtl-text-in-vs-codes-markdown-editors" target="_blank" rel="noopener">Read the workarounds</a>
+      </p>
     </article>
   </div>
 </section>

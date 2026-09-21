@@ -1,6 +1,7 @@
 .vscode/**
 .vscode-test/**
 .claude/**
+.kilo/**
 .github/**
 src/**
 out/**

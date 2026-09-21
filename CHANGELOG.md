@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.0.6
+
+- Documented the RTL status of VS Code's new WYSIWYG Markdown Editor: no RTL support there yet (tracked in https://github.com/bysajaad/noote/issues/1), with workaround guidance in the README and on the website. No changes to extension behavior.
+
+## 0.0.5
+
+- Marketplace listing metadata: refreshed description, categories (Programming Languages, Snippets), and discoverability keywords.
+- Website: `/buy-me-a-coffee` donation page, social preview card, PostHog analytics, `vscode:` protocol install links.
+- No changes to extension behavior.
+
+## 0.0.4
+
+- Landing page (`www/`) deployed via GitHub Pages at https://noote.iamsajaad.com.
+- README: website and buy-me-a-coffee links, demo GIF.
+- No changes to extension behavior.
+
 ## 0.0.3
 
 - Updated extension icon.

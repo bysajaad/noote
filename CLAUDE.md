@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project status
 
-This repository currently contains only `project-brief.md` (the spec) and `LICENSE`. No code has been scaffolded yet. **`project-brief.md` is the source of truth** — read it in full before starting implementation work; the summary below is not a substitute for it.
+Scaffolded and published: the extension is implemented under `src/`, bundled with esbuild to `dist/`, and released to the VS Code Marketplace as `bysajaad.noote` (currently 0.0.6). `www/` is the landing page at https://noote.iamsajaad.com, deployed via GitHub Pages. **`project-brief.md` remains the source of truth** for scope — read it in full before implementation work; the summary below is not a substitute for it.
 
 ## What this is
 
